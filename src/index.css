@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background-color: #F5EFE4;
+    color: #5B5146;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #312219;
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5EFE4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D2C6A6;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #67523C;
+}
+
+/* Glassmorphism accents tailored to palette */
+.cafe-glass {
+  background: rgba(245, 239, 228, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(103, 82, 60, 0.12);
+}
+
+.cafe-card-shadow {
+  box-shadow: 0 10px 25px -5px rgba(49, 34, 25, 0.08), 0 8px 10px -6px rgba(49, 34, 25, 0.04);
+}
+
